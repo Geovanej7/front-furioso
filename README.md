@@ -72,5 +72,13 @@ classDiagram
         Boolean atingiu_maximo
     }
 
+    class Rodadas {
+        Long id
+        Long  atingiu_maximo_id
+        LocalDate inicio
+        LocalDate fim
+    }
+
     Usuario "1" --> "1" Complemento
     Usuario "1" --> "1" BarraDeFuriosidade
+    Rodadas "1" --> "n" BarraDeFuriosidade
