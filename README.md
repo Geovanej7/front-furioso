@@ -13,7 +13,7 @@ O FURIA Fan permite que os fãs criem um perfil, escolham seu jogador favorito e
 ## ⚙️ Tecnologias utilizadas
 
 - 🧠 **ChatGPT** – suporte para pesquisa e modelagem da solução
-- 🌐 **Angular** – desenvolvimento do frontend
+- 🌐 **Angular** *(em desenvolvimento)* – desenvolvimento do frontend
 - ☕ **Java com Spring Boot** *(em desenvolvimento)* – backend da aplicação
 - 🐘 **PostgreSQL** *(em desenvolvimento)* – persistência dos dados
 
