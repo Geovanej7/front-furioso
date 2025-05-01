@@ -1,0 +1,63 @@
+  
+  .auth-container {
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    max-width: 460px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .highlight {
+    font-weight: bold;
+    font-size: 60px;
+    background: linear-gradient(to right, #FFD700, #FF8C00);
+    -webkit-background-clip: text;
+    background-clip: text; /* <-- Adicionado para compatibilidade */
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+  
+  
+  .google-btn {
+    background-color: #ddd;
+    border: none;
+    border-radius: 2rem;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .separator {
+    margin: 1rem 0;
+    color: #ccc;
+  }
+  
+  .auth-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  
+  .action-btn {
+    flex: 1;
+    background-color: black;
+    color: yellow;
+    border: none;
+    border-radius: 2rem;
+    padding: 0.75rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .action-btn:hover {
+    background-color: #222;
+  }
+  

@@ -1,1 +1,30 @@
-<p>create works!</p>
+<div class="container_create">
+<h1><span class="highlight">Crie sua conta!</span></h1>
+
+<form [formGroup]="formulario" (ngSubmit)="onSubmit()" class="form">
+    <input type="email" placeholder="email" formControlName="email" />
+    <div *ngIf="email.invalid && (email.dirty || email.touched)" class="mensagem-erro">
+      <span *ngIf="email.errors?.['required']">O email é obrigatório.</span>
+      <span *ngIf="email.errors?.['email']">Digite um email válido.</span>
+    </div>
+  
+    <input type="text" placeholder="nome" formControlName="nome" />
+    <div *ngIf="nome.invalid && (nome.dirty || nome.touched)" class="mensagem-erro">
+      <span *ngIf="nome.errors?.['required']">O nome é obrigatório.</span>
+    </div>
+  
+    <input type="password" placeholder="senha" formControlName="senha" />
+    <div *ngIf="senha.invalid && (senha.dirty || senha.touched)" class="mensagem-erro">
+      <span *ngIf="senha.errors?.['required']">A senha é obrigatória.</span>
+      <span *ngIf="senha.errors?.['minlength']">A senha deve ter no mínimo 6 caracteres.</span>
+    </div>
+  
+    <input type="password" placeholder="confirmar senha" formControlName="confirmarSenha" />
+    <div *ngIf="confirmarSenha.invalid && (confirmarSenha.dirty || confirmarSenha.touched)" class="mensagem-erro">
+      <span *ngIf="confirmarSenha.errors?.['required']">Confirme sua senha.</span>
+      <span *ngIf="confirmarSenha.errors?.['senhaMismatch']">As senhas não coincidem.</span>
+    </div>
+  
+    <button type="submit" class="btn-submit" [disabled]="formulario.invalid">Criar conta</button>
+  </form>
+</div>
