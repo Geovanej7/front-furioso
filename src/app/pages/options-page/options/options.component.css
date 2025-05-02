@@ -1,20 +1,27 @@
   
   .auth-container {
-    background-color: rgba(0, 0, 0, 0.85);
+    border-radius: 30px;
+    background: #111;
+    width:500px;
+    height: 400px;
+    margin-top: 10px;
     padding: 2rem;
     border-radius: 1rem;
     text-align: center;
     max-width: 460px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   
   h1 {
-    font-size: 2rem;
+    font-size: 50px;
     margin-bottom: 2rem;
+    background: #111;
   }
   
   .highlight {
     font-weight: bold;
-    font-size: 60px;
     background: linear-gradient(to right, #FFD700, #FF8C00);
     -webkit-background-clip: text;
     background-clip: text; /* <-- Adicionado para compatibilidade */
@@ -37,12 +44,14 @@
   .separator {
     margin: 1rem 0;
     color: #ccc;
+    background: #111;
   }
   
   .auth-actions {
     display: flex;
     justify-content: space-between;
     gap: 1rem;
+    background: #111;
   }
   
   .action-btn {

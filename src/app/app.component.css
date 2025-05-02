@@ -14,13 +14,15 @@ main {
     align-items: center;
 }
 
-
-header{
-    height: 160px;
-    padding-top: 20px;
+header {
     display: flex;
-    align-items: center;
     justify-content: center;
+}
+
+header > img{
+    width: 250px;
+    height: 250px;
+    margin-bottom: -30px;
 }
 
 footer{

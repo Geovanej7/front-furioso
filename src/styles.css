@@ -2,12 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h1{
     color: white;
+}
+
+body{
+    background-image: url('./assets/img/background.desktop.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 p{

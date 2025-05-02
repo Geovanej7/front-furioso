@@ -1,1 +1,22 @@
-<p>login works!</p>
+<div class="login-container">
+    <h2 class="login-title"><span class="highlight">Login</span></h2>
+  
+    <form [formGroup]="formLogin" (ngSubmit)="onSubmit()" class="container_form">
+  
+      <input type="email" placeholder="email" formControlName="email" class="input-campo" />
+      <div *ngIf="email.invalid && (email.dirty || email.touched)" class="mensagem-erro">
+        <span *ngIf="email.errors?.['required']">O email é obrigatório.</span>
+        <span *ngIf="email.errors?.['email']">Insira um email válido.</span>
+      </div>
+  
+      <input type="password" placeholder="senha" formControlName="senha" class="input-campo" />
+      <div *ngIf="senha.invalid && (senha.dirty || senha.touched)" class="mensagem-erro">
+        <span *ngIf="senha.errors?.['required']">A senha é obrigatória.</span>
+        <span *ngIf="senha.errors?.['minlength']">A senha deve ter no mínimo 6 caracteres.</span>
+      </div>
+  
+      <button type="submit" [disabled]="formLogin.invalid" class="btn-login">Entrar</button>
+    </form>
+  
+  </div>
+  
