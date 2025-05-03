@@ -25,6 +25,6 @@
       <span *ngIf="confirmarSenha.errors?.['senhaMismatch']">As senhas não coincidem.</span>
     </div>
   
-    <button type="submit" class="btn-submit" [disabled]="formulario.invalid">Criar conta</button>
+    <button type="submit" class="btn-submit" [disabled] ="formulario.invalid" [routerLink]="['/about']">Criar conta</button>
   </form>
 </div>

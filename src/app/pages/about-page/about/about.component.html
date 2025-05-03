@@ -1,1 +1,20 @@
-<p>about works!</p>
+<div class="container">
+  
+    <h1>Queremos te <br>conhecer melhor!</h1>
+  
+    <div class="inputs">
+      <input type="text" placeholder="Qual a sua idade ?" />
+      <input type="text" placeholder="De onde você é ?" />
+  
+      <select [(ngModel)]="jogadorSelecionado" class="select-jogador">
+        <option value="" disabled selected>Qual seu jogador favorito?</option>
+        <option *ngFor="let jogador of jogadores" [value]="jogador.nome">
+          {{ jogador.nome }} - {{ jogador.equipe }}
+        </option>
+      </select>
+    </div>
+  
+    <button class="btn-continuar">Continuar</button>
+  
+  </div>
+  
